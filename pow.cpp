@@ -13,7 +13,7 @@ int main(){
   while(p > 0){
     if( p & 1 ) ans = (ans*i)%m;
     i = (i*i)%m;
-    p >>= 1;
+    p *= 2;
   }
   cout << ans << "\n";
 }

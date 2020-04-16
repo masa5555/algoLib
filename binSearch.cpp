@@ -15,10 +15,11 @@ int binary_search(int key){
     int ng = -1;
     int ok = (int)a.size();
     
-    // ok と　ng のどちらがおおきいかわからないことに考慮
-    while(abs(ok -ng) > 1){
+    // ok と　ng のどちらが大きいかわからないことに考慮
+    while(abs(ok - ng) > 1)
+    {
         int mid = (ok + ng)/2;
-
+        
         if(isOK(mid, key)) ok = mid;
         else ng = mid;
     }
